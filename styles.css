@@ -1,0 +1,46 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(241, 133, 255);
+    padding: 10px;
+}
+    
+.grid-item-UNREVEALED {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-BLUE {
+    background-color: rgb(158, 255, 250);
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-RED {
+    background-color: rgb(255, 138, 138);
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-BLANK {
+    background-color: rgb(255, 249, 163);
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-DEATH {
+    background-color: rgb(161, 119, 78);
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
