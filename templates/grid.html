@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <h1>GRID</h1>
+
+    <p>Team Guessing: {{ team }}</p>
+    <p>Blue needs to guess {{ blue.winning_score - blue.current_score}} more. </p>
+    <p>Red needs to guess {{ red.winning_score - red.current_score}} more. </p>
+    <p>Message: {{ message }}</p>
+
+    <div class="grid-container">
+        {% for i in range(25) %}
+            {% if cards[i].revealed %}
+                <div class="grid-item-{{ cardtypes[i] }}">{{ cards[i].name }}</div>
+            {% else %}
+                <div class="grid-item-UNREVEALED">{{ cards[i].name }}</div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <form action="/grid" method="post">
+        <div>
+            <input name="guess" placeholder="guess (or pass)" type="text">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    
+
+{% endblock %}
